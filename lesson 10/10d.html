@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friend Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .cards-container {
+      display: flex;
+      gap: 16px;
+    }
+
+    .card {
+      width: 200px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-image-container {
+      width: 100%;
+      height: 200px;
+      background-color: #e0e0e0;
+    }
+
+    .card-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .profile-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .mutual-friends {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #ccc;
+    }
+
+    .mutual-text {
+      font-size: 13px;
+      color: #777777;
+    }
+
+    .add-friend-btn {
+      background-color: #3b71ca;
+      color: #ffffff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      width: fit-content;
+      transition: background-color 0.2s ease;
+    }
+
+    .add-friend-btn:hover {
+      background-color: #2c59a3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cards-container">
+
+    
+    <div class="card">
+      <div class="card-image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBPVM4PdUN_8Aw-qhBOAUlX99znlAOwHWc_q06y_TKVw&s=10" alt="Oliver">
+      </div>
+      <div class="card-content">
+        <div class="profile-name">Cat</div>
+        <div class="mutual-friends">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFI7D60xRiexUDGHZZpKMPwK1Q1Hfg1dYXswxj5TSFw&s=10" alt="Avatar" class="avatar">
+          <span class="mutual-text">2 mutual friends</span>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+   
+    <div class="card">
+      <div class="card-image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yNnB3lRwQRzBLX2-pFQEv-KVBfpol1eCdtq8K9vWIA&s=10"  alt="Mimi">
+      </div>
+      <div class="card-content">
+        <div class="profile-name">zopeshwar</div>
+        <div class="mutual-friends">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFI7D60xRiexUDGHZZpKMPwK1Q1Hfg1dYXswxj5TSFw&s=10" alt="Avatar" class="avatar">
+          <span class="mutual-text">3 mutual friends</span>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfPbLY29utaZC4Bh0CVrm-aPFmWX3M0F2ADb1HzcBW0g&s=10" alt="Rex">
+      </div>
+      <div class="card-content">
+        <div class="profile-name">Amhi bull</div>
+        <div class="mutual-friends">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaFI7D60xRiexUDGHZZpKMPwK1Q1Hfg1dYXswxj5TSFw&s=10" alt="Avatar" class="avatar">
+          <span class="mutual-text">4 mutual friends</span>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
